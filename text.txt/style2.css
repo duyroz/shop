@@ -1,0 +1,31 @@
+/* Стили для списка кроссовок на странице бренда */
+.sneakers-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.sneaker-item {
+  width: 45%;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.sneaker-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+}

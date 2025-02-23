@@ -1,0 +1,124 @@
+/* Global styles for the mobile site */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Logo block styling */
+.logo-block {
+  text-align: center;
+  padding: 10px;
+}
+
+.logo-block img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Brands header block: fixed width, centered with black background and white text */
+.brands-header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+/* Brands list block styling */
+.brands-block {
+  padding: 10px;
+}
+
+/* Grid layout for 25 items (5 columns) */
+.brand-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.brand-item {
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.8em;
+}
+
+.brand-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Side panel common styles */
+.side-panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  max-width: 300px;
+  background: #fff;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* Catalog panel: hidden to the left by default */
+#catalog-panel {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+#catalog-panel.active {
+  transform: translateX(0);
+}
+
+/* Cart panel: hidden to the right by default */
+#cart-panel {
+  right: 0;
+  transform: translateX(100%);
+}
+
+#cart-panel.active {
+  transform: translateX(0);
+}
+
+/* Fixed buttons styling */
+#catalog-btn,
+#cart-btn {
+  position: fixed;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  z-index: 1100;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+#catalog-btn {
+  left: 20px;
+}
+
+#cart-btn {
+  right: 20px;
+}
+
+/* Close button styling inside panels */
+.close-btn {
+  margin-top: 20px;
+  padding: 8px 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
